@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 1 Question</title>
+
+	<style type="text/css">
+		body
+		{
+			background: lightgoldenrodyellow;
+		}
+		p
+		{
+			color: black;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Lab Question 1 : Forms</h1>
+
+	<form>
+		<form>
+		<label for="aname">Name</label><br>
+		<input type="text" id="aname" name="aname" value="" placeholder="Enter your name here" required><br><br>
+		<label for="uname">Username</label><br>
+		<input type="text" id="uname" name="uname" value="" placeholder="@example.com" autofocus required><br><br>
+		<label for="pw">Password</label><br>
+		<input type="password" id="pw" name="pw" minlength="6" value="" required><br>
+	</form>
+
+	<hr>
+
+	<form>
+		<label for="categor">Select any category : </label><br>
+		<select id="categor" name="categor" required>
+			<option value="student">Student</option>
+			<option value="employee">Employee</option>
+			<option value="freelancer" selected>Freelancer</option>
+		</select><br><br><br>
+		
+	</form>
+
+	<form>
+		<label for="eventdate">Enter the event date : </label><br>
+		<input type="date" name="eventdate"><br><br><br>
+
+		<label for="tickets">Enter the number of tickets : </label><br>
+		<input type="radio" name="tickets" value="1" required>1
+		<input type="radio" name="tickets" value="2" checked required>2
+		<input type="radio" name="tickets" value="3" required>3
+	</form><br><br>
+
+	<form>
+		<label for="payment">Enter the form of payment : </label><br>
+		<input type="checkbox" name="payment" value="online" required>Online Payment
+		<input type="checkbox" name="payment" value="offline" required>Offline Payment
+	</form><br>
+
+	<form>
+		<p>Write any notes here : </p>
+		<textarea cols="50" rows="10" name="notes" maxlength="25" placeholder="Write any notes"></textarea>
+	</form><br><br>
+
+	<form>
+		<input type="submit" name="submit" value="Submit">
+		<input type="reset" name="reset" value="Reset">
+	</form>
+
+
+	</form>
+
+</body>
+</html>
